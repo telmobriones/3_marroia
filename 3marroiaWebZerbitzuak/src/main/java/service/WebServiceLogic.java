@@ -17,7 +17,7 @@ public class WebServiceLogic implements WebServiceLogicInterface {
 	ArrayList<Flight> flights;
 
 	public WebServiceLogic() {
-		Flight_db_Access flightsDB = new Flight_db_Access();
+		//Flight_db_Access flightsDB = new Flight_db_Access();
 
 //		Flight f1 = new Flight("F1", "Donostia", "Bilbo");
 //		String fc1 = f1.getFlightCode();
@@ -41,7 +41,7 @@ public class WebServiceLogic implements WebServiceLogicInterface {
 //		flightsDB.addConcreteFlight(fc2, fc2 + "CF2", newDate(2022, 1, 22), 3, 3, 0, "12:00");
 //		flightsDB.addConcreteFlight(fc2, fc2 + "CF3", newDate(2022, 1, 23), 3, 3, 0, "12:00");
 
-		flightsDB.close();
+		//flightsDB.close();
 	}
 
 	public List<ConcreteFlight> getConcreteFlights(String departingCity, String arrivingCity, Date date) {
